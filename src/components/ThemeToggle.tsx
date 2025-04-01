@@ -11,12 +11,12 @@ export function ThemeToggle() {
       variant="ghost" 
       size="icon" 
       onClick={toggleTheme}
-      className="rounded-full"
+      className="rounded-full transition-all duration-300 hover:bg-accent hover:scale-110"
     >
       {theme === "light" ? (
-        <Sun className="h-5 w-5" />
+        <Sun className="h-5 w-5 text-craft-terracotta transition-all duration-300" />
       ) : (
-        <Moon className="h-5 w-5" />
+        <Moon className="h-5 w-5 text-craft-sage transition-all duration-300" />
       )}
       <span className="sr-only">Chuyển đổi giao diện</span>
     </Button>
