@@ -1,6 +1,4 @@
 
-import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
-import { NhileSidebar } from "./NhileSidebar";
 import Header from "./Header";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/hooks/use-theme";
@@ -12,18 +10,13 @@ interface NhileLayoutProps {
 export function NhileLayout({ children }: NhileLayoutProps) {
   return (
     <ThemeProvider>
-      <SidebarProvider>
-        <div className="min-h-screen flex w-full bg-background">
-          <NhileSidebar />
-          <SidebarInset className="flex flex-col">
-            <Header />
-            <main className="flex-1 overflow-auto p-6">
-              {children}
-            </main>
-          </SidebarInset>
-          <Toaster />
-        </div>
-      </SidebarProvider>
+      <div className="min-h-screen flex flex-col w-full bg-background">
+        <Header />
+        <main className="flex-1 overflow-auto p-6 container mx-auto">
+          {children}
+        </main>
+        <Toaster />
+      </div>
     </ThemeProvider>
   );
 }

@@ -34,14 +34,6 @@
     --ring: 15 70% 60%;
 
     --radius: 0.75rem;
-
-    /* Sidebar colors */
-    --sidebar: 0 0% 100%;
-    --sidebar-foreground: 24 15% 25%;
-    --sidebar-border: 30 30% 88%;
-    --sidebar-accent: 30 30% 94%;
-    --sidebar-accent-foreground: 24 15% 25%;
-    --sidebar-ring: 15 70% 60%;
   }
 
   .dark {
@@ -72,14 +64,6 @@
     --border: 224 25% 15%;
     --input: 224 25% 15%;
     --ring: 15 70% 55%;
-
-    /* Sidebar colors */
-    --sidebar: 224 25% 12%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-border: 224 25% 15%;
-    --sidebar-accent: 224 25% 15%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-ring: 15 70% 55%;
   }
 }
 
@@ -103,13 +87,13 @@
   .dropdown-appear {
     animation: fadeInDown 0.3s ease-out forwards;
   }
-
-  .sidebar-appear {
-    animation: slideInLeft 0.3s ease-out forwards;
-  }
   
   .animate-heart-beat {
     animation: heartBeat 0.6s ease-in-out;
+  }
+  
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-craft-terracotta to-craft-clay bg-clip-text text-transparent;
   }
 }
 
@@ -121,15 +105,6 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes slideInLeft {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
   }
 }
 
