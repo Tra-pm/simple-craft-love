@@ -17,42 +17,42 @@ import {
 
 const navItems = [
   {
-    title: "Newsfeed",
+    title: "Bảng Tin",
     href: "/newsfeed",
     icon: <Newspaper className="h-4 w-4 mr-2" />
   },
   {
-    title: "Saved",
+    title: "Đã Lưu",
     href: "/saved",
     icon: <Bookmark className="h-4 w-4 mr-2" />
   },
   {
-    title: "Members",
+    title: "Thành Viên",
     href: "/members",
     icon: <Users className="h-4 w-4 mr-2" />
   },
   {
-    title: "Time Contribution",
+    title: "Thời Gian Đóng Góp",
     href: "/time-contribution",
     icon: <Clock className="h-4 w-4 mr-2" />
   },
   {
-    title: "Resources",
+    title: "Tài Nguyên",
     href: "/resources",
     icon: <FolderArchive className="h-4 w-4 mr-2" />
   },
   {
-    title: "Q&A",
+    title: "Hỏi Đáp",
     href: "/qa",
     icon: <HelpCircle className="h-4 w-4 mr-2" />
   },
   {
-    title: "Settings",
+    title: "Cài Đặt",
     href: "/settings",
     icon: <Settings className="h-4 w-4 mr-2" />
   },
   {
-    title: "Profile",
+    title: "Hồ Sơ",
     href: "/profile",
     icon: <User className="h-4 w-4 mr-2" />
   }
@@ -66,7 +66,7 @@ export function MobileNav() {
       <SheetTrigger asChild>
         <Button variant="ghost" className="md:hidden" size="icon">
           <Menu className="h-5 w-5" />
-          <span className="sr-only">Toggle menu</span>
+          <span className="sr-only">Mở menu</span>
         </Button>
       </SheetTrigger>
       <SheetContent side="left" className="pr-0 sm:max-w-xs">
@@ -76,7 +76,7 @@ export function MobileNav() {
             className="flex items-center space-x-2 px-2 py-2 text-lg font-semibold border-b pb-4 mb-2"
             onClick={() => setIsOpen(false)}
           >
-            <span className="font-medium">NhiLe Team</span>
+            <span className="font-medium">Đội Nhóm NhiLe</span>
           </Link>
           {navItems.map((item) => (
             <Link

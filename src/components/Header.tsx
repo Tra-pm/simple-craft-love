@@ -12,7 +12,7 @@ export default function Header() {
         <div className="flex items-center mr-4">
           <SidebarTrigger className="mr-2" />
           <Link to="/" className="font-medium flex items-center">
-            <span className="font-semibold text-lg">NhiLe Team</span>
+            <span className="font-semibold text-lg">Đội Nhóm NhiLe</span>
           </Link>
         </div>
         <MainNav />

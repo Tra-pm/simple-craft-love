@@ -23,42 +23,42 @@ import {
 
 const sidebarItems = [
   {
-    title: "Dashboard",
+    title: "Trang Chủ",
     icon: Home,
     href: "/"
   },
   {
-    title: "Notifications",
+    title: "Thông Báo",
     icon: Bell,
     href: "/notifications"
   },
   {
-    title: "Newsfeed",
+    title: "Bảng Tin",
     icon: Newspaper,
     href: "/newsfeed"
   },
   {
-    title: "Saved Items",
+    title: "Đã Lưu",
     icon: Bookmark,
     href: "/saved"
   },
   {
-    title: "Team Members",
+    title: "Thành Viên",
     icon: Users,
     href: "/members"
   },
   {
-    title: "Time Tracking",
+    title: "Thời Gian Đóng Góp",
     icon: Clock,
     href: "/time-contribution"
   },
   {
-    title: "Resources",
+    title: "Tài Nguyên",
     icon: FolderArchive,
     href: "/resources"
   },
   {
-    title: "Q&A Portal",
+    title: "Hỏi Đáp",
     icon: HelpCircle,
     href: "/qa"
   }
@@ -68,7 +68,7 @@ export function NhileSidebar() {
   return (
     <Sidebar>
       <SidebarHeader className="px-4 py-2">
-        <h3 className="text-lg font-semibold">Quick Access</h3>
+        <h3 className="text-lg font-semibold">Truy Cập Nhanh</h3>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>

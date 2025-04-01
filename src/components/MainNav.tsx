@@ -22,42 +22,42 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
   {
-    title: "Newsfeed",
+    title: "Bảng Tin",
     href: "/newsfeed",
     icon: <Newspaper className="h-4 w-4 mr-2" />
   },
   {
-    title: "Saved",
+    title: "Đã Lưu",
     href: "/saved",
     icon: <Bookmark className="h-4 w-4 mr-2" />
   },
   {
-    title: "Members",
+    title: "Thành Viên",
     href: "/members",
     icon: <Users className="h-4 w-4 mr-2" />
   },
   {
-    title: "Time Contribution",
+    title: "Thời Gian Đóng Góp",
     href: "/time-contribution",
     icon: <Clock className="h-4 w-4 mr-2" />
   },
   {
-    title: "Resources",
+    title: "Tài Nguyên",
     href: "/resources",
     icon: <FolderArchive className="h-4 w-4 mr-2" />
   },
   {
-    title: "Q&A",
+    title: "Hỏi Đáp",
     href: "/qa",
     icon: <HelpCircle className="h-4 w-4 mr-2" />
   },
   {
-    title: "Settings",
+    title: "Cài Đặt",
     href: "/settings",
     icon: <Settings className="h-4 w-4 mr-2" />
   },
   {
-    title: "Profile",
+    title: "Hồ Sơ",
     href: "/profile",
     icon: <User className="h-4 w-4 mr-2" />
   }

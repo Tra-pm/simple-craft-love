@@ -8,7 +8,7 @@ const NotFound = () => {
 
   useEffect(() => {
     console.error(
-      "404 Error: User attempted to access non-existent route:",
+      "Lỗi 404: Người dùng cố gắng truy cập vào đường dẫn không tồn tại:",
       location.pathname
     );
   }, [location.pathname]);
@@ -18,13 +18,13 @@ const NotFound = () => {
       <div className="text-center">
         <h1 className="mb-4 text-6xl font-bold text-craft-terracotta">404</h1>
         <p className="mb-6 text-xl text-craft-brown">
-          Oops! This craft tutorial couldn't be found
+          Rất tiếc! Không thể tìm thấy trang này
         </p>
         <Button 
           asChild
           className="bg-craft-terracotta hover:bg-craft-clay"
         >
-          <a href="/">Return to Home</a>
+          <a href="/">Quay lại Trang Chủ</a>
         </Button>
       </div>
     </div>
