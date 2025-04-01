@@ -1,0 +1,96 @@
+
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
+import { Menu } from "lucide-react";
+import { 
+  Newspaper, 
+  Bookmark, 
+  Users, 
+  Clock, 
+  FolderArchive, 
+  HelpCircle, 
+  Settings, 
+  User
+} from "lucide-react";
+
+const navItems = [
+  {
+    title: "Newsfeed",
+    href: "/newsfeed",
+    icon: <Newspaper className="h-4 w-4 mr-2" />
+  },
+  {
+    title: "Saved",
+    href: "/saved",
+    icon: <Bookmark className="h-4 w-4 mr-2" />
+  },
+  {
+    title: "Members",
+    href: "/members",
+    icon: <Users className="h-4 w-4 mr-2" />
+  },
+  {
+    title: "Time Contribution",
+    href: "/time-contribution",
+    icon: <Clock className="h-4 w-4 mr-2" />
+  },
+  {
+    title: "Resources",
+    href: "/resources",
+    icon: <FolderArchive className="h-4 w-4 mr-2" />
+  },
+  {
+    title: "Q&A",
+    href: "/qa",
+    icon: <HelpCircle className="h-4 w-4 mr-2" />
+  },
+  {
+    title: "Settings",
+    href: "/settings",
+    icon: <Settings className="h-4 w-4 mr-2" />
+  },
+  {
+    title: "Profile",
+    href: "/profile",
+    icon: <User className="h-4 w-4 mr-2" />
+  }
+];
+
+export function MobileNav() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <Sheet open={isOpen} onOpenChange={setIsOpen}>
+      <SheetTrigger asChild>
+        <Button variant="ghost" className="md:hidden" size="icon">
+          <Menu className="h-5 w-5" />
+          <span className="sr-only">Toggle menu</span>
+        </Button>
+      </SheetTrigger>
+      <SheetContent side="left" className="pr-0 sm:max-w-xs">
+        <nav className="grid gap-3 px-2 py-4">
+          <Link 
+            to="/" 
+            className="flex items-center space-x-2 px-2 py-2 text-lg font-semibold border-b pb-4 mb-2"
+            onClick={() => setIsOpen(false)}
+          >
+            <span className="font-medium">NhiLe Team</span>
+          </Link>
+          {navItems.map((item) => (
+            <Link
+              key={item.title}
+              to={item.href}
+              className="flex items-center space-x-2 px-2 py-2 text-sm font-medium rounded-md hover:bg-accent"
+              onClick={() => setIsOpen(false)}
+            >
+              {item.icon}
+              <span>{item.title}</span>
+            </Link>
+          ))}
+        </nav>
+      </SheetContent>
+    </Sheet>
+  );
+}

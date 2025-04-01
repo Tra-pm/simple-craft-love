@@ -60,7 +60,15 @@ export default {
 					sage: '#A5B39A',
 					clay: '#D67D5B',
 					cream: '#F9F5EB'
-				}
+				},
+				sidebar: {
+          DEFAULT: 'hsl(var(--sidebar))',
+          foreground: 'hsl(var(--sidebar-foreground))',
+          border: 'hsl(var(--sidebar-border))',
+          accent: 'hsl(var(--sidebar-accent))',
+          'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+          ring: 'hsl(var(--sidebar-ring))',
+        },
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
